@@ -1,0 +1,53 @@
+.header {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(32, 85, 44), rgb(32, 104, 48), rgb(32, 128, 52), rgb(32, 104, 48), rgb(32, 85, 44));
+    font-family: "Bitcount Grid Double", sans-serif;
+    color: white;
+    border: 8px solid rgb(32, 85, 44);
+    box-shadow: 0 6px 4px rgba(25, 25, 25, .5);
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: normal;
+        color: rgb(216, 241, 224);
+        text-shadow: 4px 4px 0 rgba(255, 255, 255, 0.25);
+        transition: .3s ease-in all;
+        animation: floatAnimation 1.75s ease-in-out infinite;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    nav {
+        ul {
+            width: 30rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                padding: .5rem 1rem;
+                border-radius: 4rem;
+                transition: .25s ease-in all;
+                font-size: 1.5rem;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(25, 25, 25, 0.5);
+                    color: rgba(225, 225, 225, 1);
+                }
+            }
+
+        }
+    }
+}
+
+@keyframes floatAnimation {
+    50% {
+        transform: translateY(-2px);
+    }
+}
