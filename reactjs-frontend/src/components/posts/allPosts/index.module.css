@@ -1,0 +1,10 @@
+.allPosts {
+    width: 100%;
+    image-rendering: pixelated;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7rem;
+    row-gap: 3rem;
+    margin-top: 3rem;
+    font-family: "Jersey 10", sans-serif;
+}

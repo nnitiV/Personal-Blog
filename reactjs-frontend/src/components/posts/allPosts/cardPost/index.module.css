@@ -1,0 +1,60 @@
+.post {
+    background-color: rgb(9, 36, 15);
+    height: 50vh;
+    border-radius: 2rem;
+    box-shadow: 0 0 8px rgba(9, 36, 15, 0.5);
+    overflow: hidden;
+    color: white;
+
+    img {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .textPost {
+        height: 23vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1rem;
+        margin-top: 1rem;
+
+        h2 {
+            color: rgb(209, 232, 214);
+            font-weight: normal;
+            font-size: 2.75rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            display: -webkit-box;
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-top: -1.5rem;
+            -webkit-line-clamp: 6;
+            line-clamp: 6;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+        }
+
+        button {
+            width: fit-content;
+            border: none;
+            font-family: "Jersey 10", sans-serif;
+            outline: none;
+            background-color: transparent;
+            color: white;
+            font-size: 1.5rem;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+                border-color: white;
+            }
+        }
+    }
+
+}

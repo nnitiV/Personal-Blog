@@ -1,19 +1,19 @@
+import AllPosts from "./allPosts";
 import styles from "./index.module.css";
+import Recents from "./recent";
 
-export default function Posts() {
+interface Arguments {
+	redirectPage: (index: number) => void;
+}
+
+export default function Posts({ redirectPage }: Arguments) {
 	return (
 		<main className={styles.posts}>
 			<div className={styles.main}>
-				<h1 className={styles.title}>Posts</h1>
+				<h1 className={styles.title}>Our blogs</h1>
+				<AllPosts redirectPage={redirectPage} />
 			</div>
-			<div className={styles.recent}>
-				<div className={styles.title}>
-					<h2>
-						<i className="fa-solid fa-clock-rotate-left"></i>
-						Recent posts
-					</h2>
-				</div>
-			</div>
+			<Recents redirectPage={redirectPage} />
 		</main>
 	);
 }

@@ -9,17 +9,35 @@
     font-family: "Bitcount Grid Double", sans-serif;
     color: white;
     border: 8px solid rgb(32, 85, 44);
-    box-shadow: 0 6px 4px rgba(25, 25, 25, .5);
-    z-index: 1;
-    position: relative;
+    box-shadow: 0 6px 4px rgba(25, 25, 25, 0.5);
+    z-index: 1000;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2.5rem;
+    transition: all 0.3s ease;
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        margin: 0 auto;
+        transform: translateX(-50%);
+    }
 
     h1 {
         font-size: 2.5rem;
         font-weight: normal;
-        color: rgb(216, 241, 224);
         text-shadow: 4px 4px 0 rgba(255, 255, 255, 0.25);
         transition: .3s ease-in all;
         animation: floatAnimation 1.75s ease-in-out infinite;
+        text-decoration: none;
+
+        a {
+            color: rgb(216, 241, 224);
+            text-decoration: none;
+        }
 
         &:hover {
             cursor: pointer;
